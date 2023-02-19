@@ -6,7 +6,7 @@ solution:
 
 2. admin login shows all the users names and userids (we get john userid here)
 
-3. we go back to login, and use john userid and sql injection on password to get into join user page (vulnerable to sqlinjection)
+3. we go back to login, and use john userid and sql injection on password to get into john user page (vulnerable to sqlinjection)
 
 nb: any' OR '1'='1
 
