@@ -8,6 +8,8 @@ solution:
 
 3. we go back to login, and use john userid and sql injection on password to get into join user page (vulnerable to sqlinjection)
 
+nb: any' OR '1'='1
+
 4. john user page contains the key and this key should be submitted as it is, along with basic writeup to get points.
 
 nb: participants can try to use sql injection on userid as well, but they cannot get the key. but they can chain multiple query conditions to exploit. but they will miss out the bonus points, since they do not know other users exist.
