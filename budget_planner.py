@@ -92,4 +92,33 @@ bills = {'gas': 100, 'electricity': 80, 'water': 50}
 optional_expenses = {'clothing': 10, 'entertainment': 75, 'dining out': 12, 'travel': 20, 'netflix': 12}
 priority = 'medium'
 
+# monthly_income = int(input())
+
+# bills_names = list()
+# bills_prices = list()
+
+# biils_c = int(input())
+# for i in range(bills_c):
+#     bills_names.append(input())
+# for i in range(biils_c):
+#     bills_prices.append(int(input()))
+    
+# bills = dict(zip(bills_names, bills_prices))
+
+# op_names = list()
+# op_prices = list()
+
+# op_c = int(input())
+# for i in range(op_c):
+#    op_names.append(input())
+# for i in range(op_c):
+#     op_prices.append(int(input()))
+    
+# optional_expenses = dict(zip(op_names, op_prices))
+
+# priority = input()
+
+# if(priority not in ["high", "medium","low"]):
+#     priority = "medium"
+
 budget_planner(monthly_income, bills, optional_expenses, priority)
