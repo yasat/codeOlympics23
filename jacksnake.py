@@ -81,4 +81,4 @@ for snake in path:
       dirs.append("up")
   st = snake
 
-print(dirs)
+print(", ".join(dirs))
