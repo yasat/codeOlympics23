@@ -35,13 +35,13 @@ def check_movement(position):
 
 def bfs(snake, food):
         q = [snake]
-        visited = {tuple(pos): False for pos in GRID}
+        visited = {tuple(pos): False for pos in grid}
         visited[snake] = True
-        prev = {tuple(pos): None for pos in GRID}
+        prev = {tuple(pos): None for pos in grid}
 
         while q:
             node = q.pop(0)
-            neighbors = tuple([pos for pos in [[node[0] + 1, node[1]], [node[0] - 1, node[1]], [node[0], node[1] + 1], [node[0], node[1] - 1]] if pos in GRID])
+            neighbors = tuple([pos for pos in [[node[0] + 1, node[1]], [node[0] - 1, node[1]], [node[0], node[1] + 1], [node[0], node[1] - 1]] if pos in grid])
             for next_node in neighbors:
                 if check_movement(next_node) and not visited[tuple(next_node)]:
                     q.append(tuple(next_node))
@@ -64,5 +64,21 @@ def bfs(snake, food):
         return []
 
 # print(maze)
-                              
-print(len(bfs(snake, food)))
+
+path = bfs(snake, food)
+dirs = list()
+st = snake
+for snake in path:          
+  if(snake[0] == st[0]):
+    if(snake[1] > st[1]):
+      dirs.append("right")
+    else:
+      dirs.append("left")
+  else:
+    if(snake[0] > st[0]):
+      dirs.append("down")
+    else:
+      dirs.append("up")
+  st = snake
+
+print(dirs)
