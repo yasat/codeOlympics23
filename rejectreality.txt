@@ -1,0 +1,16 @@
+description: I am John.. I have secrets on my user page.. no one can hack my account.. not even my lazy admin!!
+
+solution:
+
+1. john mentioned admin is lazy. hence, admin credentials can be (admin, admin) (anyways, it is the first credentials we try anyways.)
+
+2. admin login shows all the users names and userids (we get john userid here)
+
+3. we go back to login, and use john userid and sql injection on password to get into join user page (vulnerable to sqlinjection)
+
+4. john user page contains the key and this key should be submitted as it is, along with basic writeup to get points.
+
+5. optional: there will be other users as well, and for few users there will be bonus points (this will be hidden from the participants. it is up to them to find it out).
+
+sample webpage to showcase the working: https://chancier-spades.000webhostapp.com/
+(hosted on free host, without any beautifications.. just to show concept.)
