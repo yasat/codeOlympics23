@@ -1,5 +1,7 @@
 description: I am John.. I have secrets on my user page.. no one can hack my account.. not even my lazy admin!!
 
+difficulty level: EASY
+
 solution:
 
 1. john mentioned admin is lazy. hence, admin credentials can be (admin, admin) (anyways, it is the first credentials we try anyways.)
