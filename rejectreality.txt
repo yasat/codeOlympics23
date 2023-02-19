@@ -10,6 +10,8 @@ solution:
 
 4. john user page contains the key and this key should be submitted as it is, along with basic writeup to get points.
 
+nb: participants can try to use sql injection on userid as well, but they cannot get the key. but they can chain multiple query conditions to exploit. but they will miss out the bonus points, since they do not know other users exist.
+
 5. optional: there will be other users as well, and for few users there will be bonus points (this will be hidden from the participants. it is up to them to find it out).
 
 sample webpage to showcase the working: https://chancier-spades.000webhostapp.com/
